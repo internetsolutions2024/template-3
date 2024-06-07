@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="favicon.ico" type="image/svg+xml">
+   <title>Example-3</title>
+</head>
+
+<body>
+   <style>
+      /*https://bootstrapmade.com/demo/Medilab/*/
+      @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+      body {
+         background-color: #f3f3f3;
+      }
+
+      .main {
+         box-sizing: border-box;
+         max-width: 900px;
+         margin: 0 auto;
+         background-color: #ffffff;
+         font-family: "Open Sans", sans-serif;
+      }
+
+      :root {
+         --mycolor1: #2c4964;
+         --mycolor2: #1977cc;
+         --mycolor3: #3291e6;
+         --mycolor4: #f1f7fd;
+      }
+
+      a {
+         text-decoration: none;
+      }
+
+      * h2,
+      p,
+      h3,
+      h4 {
+         margin: 0 0 10px 0 !important;
+      }
+
+      p {
+         font-size: 14px;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+         font-family: "Raleway", sans-serif;
+      }
+
+      /*-----------------------*/
+
+      .medialab {
+         padding: 80px 0px 200px;
+         background: url(img-3/hero-bg.jpg);
+         background-size: cover;
+         background-attachment: fixed;
+         color: var(--mycolor1);
+      }
+
+      .medialab__container {}
+
+      ._container {
+         max-width: 900px;
+         margin: 0 auto;
+      }
+
+      .medialab-content {
+         max-width: 500px;
+         padding: 0 30px;
+         text-align: left;
+         font-family: "Raleway", sans-serif;
+      }
+
+      .medialab-title {
+         font-size: 48px;
+         line-height: 54px;
+         font-weight: 700;
+         text-transform: uppercase;
+      }
+
+      .medialab-sub-title {
+         font-size: 24px;
+         font-weight: 500;
+      }
+
+      .medialab-buttons {}
+
+      .buttons {
+         font-weight: 500;
+         font-size: 14px;
+         font-family: "Raleway", sans-serif;
+         color: #fff;
+         padding: 14px 38px;
+         text-align: center;
+         display: inline-block;
+         border-radius: 30px;
+         transition: ease-in all 0.3s;
+         margin: 20px 0;
+         background-color: var(--mycolor2);
+         text-transform: uppercase;
+      }
+
+      .buttons:hover {
+         background-color: var(--mycolor3);
+         transition: ease-in all 0.3s;
+      }
+
+      @media screen and (max-width: 500px) {
+         .medialab-content {
+            width: auto;
+         }
+
+      }
+
+      /*--------choose---------*/
+      .choose {
+         margin: -180px 0 0;
+      }
+
+      .choose__container {}
+
+      ._container {}
+
+      .top-choose {
+         padding: 0 20px;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         align-items: center;
+      }
+
+      .top-choose-info {
+         background-color: var(--mycolor2);
+         color: #fff;
+         flex: 1 1 25%;
+         display: flex;
+         flex-direction: column;
+         margin: 10px;
+         padding: 20px;
+         border-radius: 4px;
+      }
+
+      .top-choose-title {
+         font-size: 28px !important;
+         line-height: 34px;
+      }
+
+      .top-choose-text {
+         font-size: 14px;
+      }
+
+      .top-choose-buttons {
+         margin: 0 auto;
+         background: rgba(255, 255, 255, 0.2);
+         text-transform: none;
+         padding: 12px 35px;
+      }
+
+      .top-choose-buttons:hover {
+         color: var(--mycolor2);
+         background-color: #fff;
+      }
+
+      .top-choose-buttons span {
+         transition: .3s;
+         display: inline-block;
+      }
+
+      .top-choose-buttons:hover span {
+         transform: translateX(3px);
+      }
+
+      .buttons {}
+
+      .top-choose-items {
+         flex: 1 1 65%;
+         display: flex;
+         flex-wrap: wrap;
+      }
+
+      .item-top-choose {
+         margin: 10px;
+         border-radius: 10px;
+         background: #fff;
+         box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+         padding: 10px;
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+         flex: 1 1 20%;
+         transition: .3s;
+      }
+
+      .item-top-choose:hover {
+         box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+         transition: .3s;
+      }
+
+      .item-top-choose h4 {
+         padding: 10px 0;
+         font-weight: 600px !important;
+         font-size: 16px !important;
+      }
+
+      .item-top-choose p {
+         font-size: 14px;
+         color: #848484;
+      }
+
+
+      .item-top-choose-icon {}
+
+      .item-top-choose-icon img {
+         width: 32px;
+         height: 32px;
+         padding-top: 10px;
+      }
+
+      @media screen and (max-width: 500px) {
+         .item-top-choose {
+            flex: 1 1 100%;
+         }
+      }
+
+      /*--------bottom-choose--------*/
+
+      .bottom-choose {
+         padding: 30px 0;
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+
+      }
+
+      .bottom-choose p {
+         font-size: 14px;
+      }
+
+      .bottom-choose-video {
+         flex: 1 1 40%;
+      }
+
+      .bottom-choose-video iframe {
+         width: 100%;
+         height: 100%;
+         min-height: 400px;
+      }
+
+      .bottom-choose-content {
+         padding: 20px;
+         flex: 1 1 55%;
+      }
+
+      .bottom-choose-title {
+         font-size: 28px !important;
+         color: var(--mycolor1);
+         font-weight: 600 !important;
+      }
+
+      .bottom-choose-text {}
+
+      .bottom-choose-items {
+         display: flex;
+         flex-wrap: wrap;
+      }
+
+      .bottom-choose-item {
+         display: flex;
+         flex: 1 1 100%;
+         margin: 15px 0;
+         transition: .3s;
+      }
+
+      .bottom-choose-icon-area {
+         width: 54px;
+         height: 54px;
+         border-radius: 50%;
+         border: 2px solid var(--mycolor3);
+         padding: 0;
+      }
+
+      .bottom-choose-item:hover .bottom-choose-icon-area {
+         border: 2px solid var(--mycolor2);
+         background-color: var(--mycolor2);
+         transition: .3s;
+      }
+
+      .bottom-choose-icon {
+         transition: .3s;
+      }
+
+      .bottom-choose-icon-1 {
+         width: 32px;
+         height: 32px;
+         background: transparent url(img-3/icons/choose4.png) no-repeat;
+         background-size: contain;
+         margin: 11px;
+         box-sizing: border-box;
+      }
+
+      .bottom-choose-item:hover .bottom-choose-icon-1 {
+         background: transparent url(img-3/icons/choose4-2.png) no-repeat;
+         background-size: contain;
+      }
+
+      .bottom-choose-icon-2 {
+         width: 32px;
+         height: 32px;
+         background: transparent url(img-3/icons/choose5.png) no-repeat;
+         background-size: contain;
+         margin: 11px;
+         box-sizing: border-box;
+      }
+
+      .bottom-choose-item:hover .bottom-choose-icon-2 {
+         background: transparent url(img-3/icons/choose5-2.png) no-repeat;
+         background-size: contain;
+      }
+
+      .bottom-choose-icon-3 {
+         width: 32px;
+         height: 32px;
+         background: transparent url(img-3/icons/choose6.png) no-repeat;
+         background-size: contain;
+         margin: 11px;
+         box-sizing: border-box;
+      }
+
+      .bottom-choose-item:hover .bottom-choose-icon-3 {
+         background: transparent url(img-3/icons/choose6-2.png) no-repeat;
+         background-size: contain;
+      }
+
+      .bottom-choose-description {
+         margin: 0 15px;
+      }
+
+      @media screen and (max-width: 500px) {
+         .bottom-choose-content {
+            padding: 20px 30px;
+
+         }
+      }
+
+      /*-----------numbers----------*/
+
+      .numbers {
+         padding: 30px 0;
+         background: var(--mycolor4);
+         text-align: center;
+      }
+
+      .numbers__container {
+         padding: 0 20px;
+      }
+
+      ._container {}
+
+      .numbers-title {}
+
+      .bem-title {
+         color: var(--mycolor1);
+
+      }
+
+      .bem-title h2 {}
+
+      .bem-title-1 {
+         width: 100px;
+         height: 2px;
+         margin: 0 auto;
+         background-color: #e3e3e3;
+      }
+
+      .bem-title-2 {
+         width: 40px;
+         height: 3px;
+         background-color: var(--mycolor2);
+         margin: -2px auto 0;
+         animation: bem-title infinite linear 1.5s;
+      }
+
+      .bem-title:hover .bem-title-2 {
+         animation: bem-title infinite paused linear 1.5s;
+      }
+
+      @keyframes bem-title {
+         0% {
+            transform: translate(0);
+         }
+
+         25% {
+            transform: translateX(30px);
+         }
+
+         50% {
+            transform: translate(0);
+         }
+
+         75% {
+            transform: translateX(-30px);
+         }
+
+         100% {
+            transform: translate(0);
+         }
+      }
+
+      .numbers-body {
+         padding: 20px 0 0;
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+      }
+
+      .numbers-item {
+         background-color: #fff;
+         flex: 1 1 15%;
+         padding: 10px 20px;
+         margin: 30px 10px 10px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .numbers-item-icon {
+         border-radius: 50%;
+         background-color: var(--mycolor2);
+         width: 44px;
+         height: 44px;
+         margin: -30px 0 10px;
+         padding: 10px;
+         box-sizing: border-box;
+         transition: .3s ease-in-out;
+      }
+
+      .numbers-item:hover img {
+         transform: rotateY(360deg);
+         transition: .6s ease-in-out;
+      }
+
+      .numbers-item:hover .numbers-item-icon {
+         transform: scale(1.1);
+         transition: .3s ease-in-out;
+      }
+
+      .numbers-item-icon img {
+         width: 24px;
+         height: 24px;
+         transition: .6s ease-in-out;
+      }
+
+      .numbers-item-numeric {
+         font-size: 24px !important;
+         font-weight: 600 !important;
+         margin: 0 !important;
+      }
+
+      .numbers-item-text {
+         font-size: 14px;
+         font-weight: 400;
+      }
+
+      @media screen and (max-width: 500px) {
+         .numbers-item {
+            flex: 1 1 30%;
+         }
+      }
+
+      /*----------services---------*/
+
+      .services {
+         padding: 30px;
+         text-align: center;
+      }
+
+      .services__container {}
+
+      ._container {}
+
+      .services-title {}
+
+
+      .services-text {
+         margin: 10px 0;
+      }
+
+      .services-body {
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         margin: 0 -10px;
+      }
+
+      .item-services {
+         display: flex;
+         flex: 1 1 25%;
+         margin: 10px;
+         padding: 30px 20px;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         border: 1px solid #d5e1ed;
+         transition: .3s;
+      }
+
+      .item-services h4 {
+         color: var(--mycolor1);
+         margin: 10px 0 !important;
+         font-size: 20px;
+         transition: .3s;
+      }
+
+      .item-services:hover h4 {
+         color: #fff;
+      }
+
+      .item-services p {
+         font-size: 14px;
+         transition: 0s;
+      }
+
+      .item-services:hover {
+         background-color: var(--mycolor2);
+         color: #fff;
+         transition: .3s;
+      }
+
+      .item-services-icon-area {
+         background: #bcdafe;
+         width: 64px;
+         height: 64px;
+         border-radius: 5px;
+         margin-bottom: 10px;
+         transform: translate(-8px, 0);
+      }
+
+      .item-services-icon {
+         background: var(--mycolor2);
+         width: 64px;
+         height: 64px;
+         border-radius: 5px;
+         transform: translate(8px, 8px);
+      }
+
+      .item-services-icon-1 {
+         background: var(--mycolor2) url(img-3/icons/services1.png) no-repeat;
+         background-size: 32px 32px;
+         background-position: center;
+      }
+
+      .item-services:hover .item-services-icon-1 {
+         background: #fff url(img-3/icons/services1-2.png) no-repeat;
+         background-size: 32px 32px;
+         background-position: center;
+      }
+
+      .item-services-icon-2 {
+         background: var(--mycolor2) url(img-3/icons/services2.png) no-repeat;
+         background-size: 32px 32px;
+         background-position: center;
+      }
+
+      .item-services:hover .item-services-icon-2 {
+         background: #fff url(img-3/icons/services2-2.png) no-repeat;
+         background-size: 32px 32px;
+         background-position: center;
+      }
+
+      .item-services-icon-3 {
+         background: var(--mycolor2) url(img-3/icons/services3.png) no-repeat;
+         background-size: 32px 32px;
+         background-position: center;
+      }
+
+      .item-services:hover .item-services-icon-3 {
+         background: #fff url(img-3/icons/services3-2.png) no-repeat;
+         background-size: 32px 32px;
+         background-position: center;
+      }
+
+      .item-services-icon-4 {
+         background: var(--mycolor2) url(img-3/icons/services4.png) no-repeat;
+         background-size: 32px 32px;
+         background-position: center;
+      }
+
+      .item-services:hover .item-services-icon-4 {
+         background: #fff url(img-3/icons/services4-2.png) no-repeat;
+         background-size: 32px 32px;
+         background-position: center;
+      }
+
+      .item-services-icon-5 {
+         background: var(--mycolor2) url(img-3/icons/services5.png) no-repeat;
+         background-size: 32px 32px;
+         background-position: center;
+      }
+
+      .item-services:hover .item-services-icon-5 {
+         background: #fff url(img-3/icons/services5-2.png) no-repeat;
+         background-size: 32px 32px;
+         background-position: center;
+      }
+
+      .item-services-icon-6 {
+         background: var(--mycolor2) url(img-3/icons/services6.png) no-repeat;
+         background-size: 32px 32px;
+         background-position: center;
+      }
+
+      .item-services:hover .item-services-icon-6 {
+         background: #fff url(img-3/icons/services6-2.png) no-repeat;
+         background-size: 32px 32px;
+         background-position: center;
+      }
+
+      @media screen and (max-width: 500px) {
+         .item-services {
+            flex: 1 1 100%;
+         }
+      }
+
+      /*---------reviews--------*/
+
+      .reviews {
+         padding: 30px 20px 20px;
+         text-align: center;
+      }
+
+      .reviews__container {}
+
+      ._container {}
+
+      .services-title {
+         margin: 0 10px 10px;
+      }
+
+      .bem-title {}
+
+      .bem-title-1 {}
+
+      .bem-title-2 {}
+
+      .reviews-body {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+      }
+
+      .item-reviews {
+         flex: 1 1 35%;
+         margin: 10px 10px 10px 40px;
+         padding: 20px 20px 20px 50px;
+         text-align: left;
+         box-shadow: 0px 2px 12px rgba(44, 73, 100, 0.08);
+         background: #fff;
+         position: relative;
+      }
+
+      .item-reviews-icon {
+         position: absolute;
+         top: 20px;
+         left: -30px;
+      }
+
+      .item-reviews-icon img {
+         width: 64px;
+         height: 64px;
+         border-radius: 5px;
+      }
+
+      .item-reviews-name {
+         font-size: 18px !important;
+         font-weight: 600 !important;
+      }
+
+      .item-reviews-position {
+         color: #848484;
+         font-style: italic;
+      }
+
+      .item-reviews-text {
+         font-style: italic;
+         margin: 15px 0 10px !important;
+      }
+
+      .item-reviews-text span {
+         display: inline-block;
+         color: #bcdafe;
+         font-size: 40px;
+         font-weight: 400;
+         line-height: 0;
+         transform: translate(-5px, 8px);
+         transition: .3s;
+      }
+
+      .item-reviews-text span:nth-child(2) {
+         transform: translate(-5px, 22px);
+      }
+
+      .item-reviews:hover .item-reviews-text span {
+         color: var(--mycolor3);
+         transition: .3s;
+      }
+
+      .reviews-button {
+         margin-top: 30px;
+      }
+
+      /*-----------faq------------*/
+
+      .faq {
+         background: var(--mycolor4);
+      }
+
+      .faq__container {
+         padding: 30px;
+         text-align: center;
+      }
+
+      ._container {}
+
+      .faq-title {}
+
+      .bem-title {}
+
+      .bem-title-1 {}
+
+      .bem-title-2 {}
+
+      .faq-body {
+         padding: 10px 30px 0;
+      }
+
+      details {
+         display: block;
+         width: 100%;
+         border-radius: 5px;
+         overflow: hidden;
+         margin: 10px 0;
+         text-align: left;
+         background-color: #fff;
+      }
+
+
+      summary::-webkit-details-marker {
+         display: none;
+      }
+
+      summary::-moz-list-bullet {
+         list-style-type: none;
+      }
+
+      summary::marker {
+         display: none;
+      }
+
+      summary {
+         display: block;
+         padding: 15px 37px;
+         font-size: 16px;
+         cursor: pointer;
+         position: relative;
+         font-weight: 600;
+      }
+
+      summary:hover {
+         color: var(--mycolor2);
+      }
+
+      summary:before {
+         top: 17px;
+         right: 10px;
+         background: url(img-3/icons/faq2.png) no-repeat 50% 50% / 16px 16px;
+         width: 16px;
+         height: 16px;
+         content: "";
+         position: absolute;
+      }
+
+      summary::after {
+         top: 16px;
+         left: 10px;
+         background: url(img-3/icons/faq1.png) no-repeat 50% 50% / 20px 20px;
+         width: 20px;
+         height: 20px;
+         content: "";
+         position: absolute;
+         transition: .5s;
+      }
+
+
+
+      details[open]>summary:before {
+         transform: rotate(180deg);
+         background: url(img-3/icons/faq2-2.png) no-repeat 50% 50% / 16px 16px;
+      }
+
+      summary~* {
+         padding: 0 12px 10px;
+      }
+
+      details[open] summary~* {
+         animation: sweep .5s ease-in-out;
+      }
+
+      @keyframes sweep {
+         0% {
+            opacity: 0;
+         }
+
+         100% {
+            opacity: 1;
+         }
+      }
+
+      summary:focus {
+         outline: 0;
+
+      }
+
+      @media screen and (max-width: 500px) {
+         .faq-body {
+            padding: 0;
+         }
+      }
+   </style>
+   <div class="main">
+      <section class="medialab">
+         <div class="medialab__container _container">
+            <div class="medialab-content">
+               <p class="medialab-title">Welcome to Medilab</p>
+               <p class="medialab-sub-title">We are team of talented designers making websites with Bootstrap
+               </p>
+               <a class="medialab-buttons buttons" href="">Get Started
+               </a>
+            </div>
+         </div>
+      </section>
+      <section class="choose">
+         <div class="choose__container _container">
+            <div class="choose-top top-choose">
+               <div class="top-choose-info">
+                  <h2 class="top-choose-title">Головні патерни нашої роботи</h2>
+                  <p class="top-choose-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                     tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                     Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad
+                     corporis.</p>
+                  <a class="top-choose-buttons buttons" href="">Learn More <span>></span></a>
+               </div>
+               <div class="top-choose-items">
+                  <div class="top-choose-item item-top-choose">
+                     <div class="item-top-choose-icon"><img src="img-3/icons/choose1.png" alt=""></div>
+                     <h4>Corporis voluptates sit</h4>
+                     <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                  </div>
+                  <div class="top-choose-item item-top-choose">
+                     <div class="item-top-choose-icon"><img src="img-3/icons/choose2.png" alt=""></div>
+                     <h4>Ullamco laboris ladore pan</h4>
+                     <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </div>
+                  <div class="top-choose-item item-top-choose">
+                     <div class="item-top-choose-icon"><img src="img-3/icons/choose3.png" alt=""></div>
+                     <h4>Labore consequatur</h4>
+                     <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="choose-bottom bottom-choose">
+         <div class="bottom-choose-video"><iframe
+               src="https://www.youtube.com/embed/8_nVbI7NcOw?si=W6tk9FV9wfGiCm0N&amp;controls=0"
+               title="YouTube video player" frameborder="0"
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         </div>
+         <div class="bottom-choose-content">
+            <h3 class="bottom-choose-title">Переваги послуги</h3>
+            <p class="bottom-choose-text">Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non
+               ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi.
+               Libero laboriosam sint et id nulla tenetur. Suscipit aut voluptate.</p>
+            <div class="bottom-choose-items">
+               <div class="bottom-choose-item">
+                  <div class="bottom-choose-icon-area ">
+                     <div class="bottom-choose-icon bottom-choose-icon-1"></div>
+                  </div>
+                  <div class="bottom-choose-description">
+                     <h4>Lorem Ipsum</h4>
+                     <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                        cupiditate non provident</p>
+                  </div>
+               </div>
+               <div class="bottom-choose-item">
+                  <div class="bottom-choose-icon-area ">
+                     <div class="bottom-choose-icon bottom-choose-icon-2"></div>
+                  </div>
+                  <div class="bottom-choose-description">
+                     <h4>Nemo Enim</h4>
+                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                        deleniti atque</p>
+                  </div>
+               </div>
+               <div class="bottom-choose-item">
+                  <div class="bottom-choose-icon-area ">
+                     <div class=" bottom-choose-icon bottom-choose-icon-3"></div>
+                  </div>
+                  <div class="bottom-choose-description">
+                     <h4>Dine Pad</h4>
+                     <p>Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt
+                        minus aut eligendi omnis</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="numbers">
+         <div class="numbers__container _container">
+            <div class="numbers-title bem-title">
+               <h2>Цікаві цифри про нашу компанію</h2>
+               <div class="bem-title-1">
+                  <div class="bem-title-2"></div>
+               </div>
+            </div>
+            <div class="numbers-body">
+               <div class="numbers-item">
+                  <div class="numbers-item-icon"><img src="img-3/icons/numbers1.png" alt=""></div>
+                  <p class="numbers-item-numeric">85</p>
+                  <p class="numbers-item-text">Doctors</p>
+               </div>
+               <div class="numbers-item">
+                  <div class="numbers-item-icon"><img src="img-3/icons/numbers2.png" alt=""></div>
+                  <p class="numbers-item-numeric">18</p>
+                  <p class="numbers-item-text">Departments</p>
+               </div>
+               <div class="numbers-item">
+                  <div class="numbers-item-icon"><img src="img-3/icons/numbers3.png" alt=""></div>
+                  <p class="numbers-item-numeric">12</p>
+                  <p class="numbers-item-text">Research Labs</p>
+               </div>
+               <div class="numbers-item">
+                  <div class="numbers-item-icon"><img src="img-3/icons/numbers4.png" alt=""></div>
+                  <p class="numbers-item-numeric">150</p>
+                  <p class="numbers-item-text">Awards</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="services">
+         <div class="services__container _container">
+            <div class="services-title bem-title">
+               <h2>Переваги роботи з нами</h2>
+               <div class="bem-title-1">
+                  <div class="bem-title-2"></div>
+               </div>
+            </div>
+            <div class="services-text">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga
+               eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
+               alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</div>
+            <div class="services-body">
+               <div class="services-item item-services">
+                  <div class="item-services-icon-area ">
+                     <div class="item-services-icon item-services-icon-1"></div>
+                  </div>
+                  <h4>Lorem Ipsum</h4>
+                  <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+               </div>
+               <div class="services-item item-services">
+                  <div class="item-services-icon-area ">
+                     <div class="item-services-icon item-services-icon-2"></div>
+                  </div>
+                  <h4>Lorem Ipsum</h4>
+                  <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+               </div>
+               <div class="services-item item-services">
+                  <div class="item-services-icon-area ">
+                     <div class="item-services-icon item-services-icon-3"></div>
+                  </div>
+                  <h4>Lorem Ipsum</h4>
+                  <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+               </div>
+               <div class="services-item item-services">
+                  <div class="item-services-icon-area ">
+                     <div class="item-services-icon item-services-icon-4"></div>
+                  </div>
+                  <h4>Lorem Ipsum</h4>
+                  <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+               </div>
+               <div class="services-item item-services">
+                  <div class="item-services-icon-area ">
+                     <div class="item-services-icon item-services-icon-5"></div>
+                  </div>
+                  <h4>Lorem Ipsum</h4>
+                  <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+               </div>
+               <div class="services-item item-services">
+                  <div class="item-services-icon-area ">
+                     <div class="item-services-icon item-services-icon-6"></div>
+                  </div>
+                  <h4>Lorem Ipsum</h4>
+                  <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="reviews">
+         <div class="reviews__container _container">
+            <div class="services-title bem-title">
+               <h2>Що думають про нас наші клієнти</h2>
+               <div class="bem-title-1">
+                  <div class="bem-title-2"></div>
+               </div>
+            </div>
+            <div class="reviews-body">
+               <div class="reviews-item item-reviews">
+                  <div class="item-reviews-icon"><img src="img-3/testimonials/testimonials-1.jpg" alt=""></div>
+                  <p class="item-reviews-name">Saul Goodman</p>
+                  <p class="item-reviews-position">Ceo &amp; Founder</p>
+                  <p class="item-reviews-text"><span>❝</span>Proin iaculis purus consequat sem cure digni ssim donec
+                     porttitora entum
+                     suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus
+                     at semper.<span>❞</span></p>
+               </div>
+               <div class="reviews-item item-reviews">
+                  <div class="item-reviews-icon"><img src="img-3/testimonials/testimonials-5.jpg" alt=""></div>
+                  <p class="item-reviews-name">Matt Brandon</p>
+                  <p class="item-reviews-position">Freelancer</p>
+                  <p class="item-reviews-text"> <span>❝</span>Fugiat enim eram quae cillum dolore dolor amet nulla
+                     culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt
+                     elit fore quem dolore labore illum veniam.<span>❞</span></p>
+               </div>
+            </div>
+            <a href="" class="reviews-button buttons">Всі відгуки</a>
+         </div>
+      </section>
+      <section class="faq">
+         <div class="faq__container _container">
+            <div class="faq-title bem-title">
+               <h2>Часті питання наших покупців</h2>
+               <div class="bem-title-1">
+                  <div class="bem-title-2"></div>
+               </div>
+            </div>
+
+
+            <div itemscope itemtype="https://schema.org/FAQPage" class="faq-body">
+               <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <summary itemprop="name">Non consectetur a erat nam at lectus urna duis?</summary>
+                  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                     <p itemprop="text"> Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus
+                        laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor
+                        purus non.
+                     </p>
+                  </div>
+               </details>
+               <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <summary itemprop="name">Feugiat scelerisque varius morbi enim nunc?</summary>
+                  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                     <p itemprop="text"> Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
+                        interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend
+                        donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus
+                        turpis massa tincidunt dui.</p>
+                  </div>
+               </details>
+               <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <summary itemprop="name">Dolor sit amet consectetur adipiscing elit? </summary>
+                  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                     <p itemprop="text">
+                        Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar
+                        elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus
+                        pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at
+                        elementum eu facilisis sed odio morbi quis</p>
+                  </div>
+               </details>
+               <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <summary itemprop="name">Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</summary>
+                  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                     <p itemprop="text"> Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim
+                        suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl
+                        suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.</p>
+                  </div>
+               </details>
+            </div>
+         </div>
+      </section>
+   </div>
+</body>
+
+</html>
